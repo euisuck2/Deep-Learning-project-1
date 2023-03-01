@@ -1,0 +1,2 @@
+AVA dataset (32GB) : https://github.com/imfing/ava_downloader.git
+TID 2013 dataset(900MB) : https://www.ponomarenko.info/tid2013.htm
