@@ -21,25 +21,6 @@ In order to train remotely on **AWS EC2**
 5. Install [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)
 
 
-## Predict
-In order to run predictions on an image or batch of images you can run the prediction script
-
-1. Single image file
-    ```bash
-    ./predict  \
-    --docker-image nima-cpu \
-    --base-model-name MobileNet \
-    --weights-file $(pwd)/models/MobileNet/weights_mobilenet_technical_0.11.hdf5 \
-    --image-source $(pwd)/src/tests/test_images/42039.jpg
-    ```
-
-2. All image files in a directory
-    ```bash
-    ./predict  \
-    --docker-image nima-cpu \
-    --base-model-name MobileNet \
-    --weights-file $(pwd)/models/MobileNet/weights_mobilenet_technical_0.11.hdf5 \
-    --image-source $(pwd)/src/tests/test_images
     ```
 
 
@@ -116,6 +97,26 @@ For example, to launch a `p2.xlarge` EC2 instance named `ec2-p2` run
     ```
 The training progress will be streamed to your terminal. After the training has finished, the train outputs (logs and best model weights) will be stored on S3 in a timestamped folder. The S3 output bucket can be specified in the **config file**. The `--image-dir` argument requires the path of the image directory on your remote instance.
 
+
+## Predict
+In order to run predictions on an image or batch of images you can run the prediction script
+
+1. Single image file
+    ```bash
+    ./predict  \
+    --docker-image nima-cpu \
+    --base-model-name MobileNet \
+    --weights-file $(pwd)/models/MobileNet/weights_mobilenet_technical_0.11.hdf5 \
+    --image-source $(pwd)/src/tests/test_images/42039.jpg
+    ```
+
+2. All image files in a directory
+    ```bash
+    ./predict  \
+    --docker-image nima-cpu \
+    --base-model-name MobileNet \
+    --weights-file $(pwd)/models/MobileNet/weights_mobilenet_technical_0.11.hdf5 \
+    --image-source $(pwd)/src/tests/test_images
 
 ## Contribute
 We welcome all kinds of contributions and will publish the performances from new models in the performance table under [Trained models](#trained-models).
