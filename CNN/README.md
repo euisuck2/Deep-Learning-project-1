@@ -22,8 +22,6 @@ In order to train remotely on **AWS EC2**
 
 
     ```
-
-
 ## Train locally on CPU
 
 1. Download dataset (see instructions under [Datasets](#datasets))
