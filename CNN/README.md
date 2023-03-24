@@ -14,23 +14,18 @@ NIMA consists of two models that aim to predict the aesthetic and technical qual
 
 3. Build docker image `docker build -t nima-cpu . -f Dockerfile.cpu`
 
-In order to train remotely on **AWS EC2**
-
-4. Install [Docker Machine](https://docs.docker.com/machine/install-machine/)
-
-5. Install [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)
-
-
     ```
 ## Train locally on CPU
 
 1. Download dataset (see instructions under [Datasets](#datasets))
 
-2. Run the local training script (e.g. for TID2013 dataset)
+1.1 The "ava_labels_train.json" file only contains imaged id and labels for image category : "interior"
+
+2. Run the local training script (e.g. for AVA dataset)
     ```bash
     ./train-local \
     --config-file $(pwd)/models/MobileNet/config_technical_cpu.json \
-    --samples-file $(pwd)/data/TID2013/tid_labels_train.json \
+    --samples-file $(pwd)/data/AVA/ava_labels_train.json \
     --image-dir /path/to/image/dir/local
     ```
 This will start a training container from the Docker image `nima-cpu` and create a timestamp train job folder under `train_jobs`, where the trained model weights and logs will be stored. The `--image-dir` argument requires the path of the image directory on your local machine.
