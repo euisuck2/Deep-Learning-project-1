@@ -47,55 +47,6 @@ In order to stream logs from last launched container run
     docker logs $CONTAINER_ID --follow
     ```
 
-## Train remotely on AWS EC2
-
-1. Configure your AWS CLI. Ensure that your account has limits for GPU instances and read/write access to the S3 bucket specified in config file [[link](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html)]
-    ```bash
-    aws configure
-    ```
-
-2. Launch EC2 instance with Docker Machine. Choose an Ubuntu AMI based on your region (https://cloud-images.ubuntu.com/locator/ec2/).
-For example, to launch a `p2.xlarge` EC2 instance named `ec2-p2` run
-(NB: change region, VPC ID and AMI ID as per your setup)
-    ```bash
-    docker-machine create --driver amazonec2 \
-                          --amazonec2-region eu-west-1 \
-                          --amazonec2-ami ami-58d7e821 \
-                          --amazonec2-instance-type p2.xlarge \
-                          --amazonec2-vpc-id vpc-abc \
-                          ec2-p2
-    ```
-
-3. ssh into EC2 instance
-    ```bash
-    docker-machine ssh ec2-p2
-    ```
-
-4. Update NVIDIA drivers and install **nvidia-docker** (see this [blog post](https://towardsdatascience.com/using-docker-to-set-up-a-deep-learning-environment-on-aws-6af37a78c551) for more details)
-    ```bash
-    # update NVIDIA drivers
-    sudo add-apt-repository ppa:graphics-drivers/ppa -y
-    sudo apt-get update
-    sudo apt-get install -y nvidia-375 nvidia-settings nvidia-modprobe
-
-    # install nvidia-docker
-    wget -P /tmp https://github.com/NVIDIA/nvidia-docker/releases/download/v1.0.1/nvidia-docker_1.0.1-1_amd64.deb
-    sudo dpkg -i /tmp/nvidia-docker_1.0.1-1_amd64.deb && rm /tmp/nvidia-docker_1.0.1-1_amd64.deb
-    ```
-
-5. Download dataset to EC2 instance (see instructions under [Datasets](#datasets)). We recommend to save the AMI with the downloaded data for future use.
-
-6. Run the remote EC2 training script (e.g. for AVA dataset)
-    ```bash
-    ./train-ec2 \
-    --docker-machine ec2-p2 \
-    --config-file $(pwd)/models/MobileNet/config_aesthetic_gpu.json \
-    --samples-file $(pwd)/data/AVA/ava_labels_train.json \
-    --image-dir /path/to/image/dir/remote
-    ```
-The training progress will be streamed to your terminal. After the training has finished, the train outputs (logs and best model weights) will be stored on S3 in a timestamped folder. The S3 output bucket can be specified in the **config file**. The `--image-dir` argument requires the path of the image directory on your remote instance.
-
-
 ## Predict
 In order to run predictions on an image or batch of images you can run the prediction script
 
