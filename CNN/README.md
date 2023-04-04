@@ -47,10 +47,9 @@ In order to run predictions on an image or batch of images you can run the predi
 
 All image files in a directory
     ```bash
-    ./predict  \
-    --docker-image nima-cpu \
-    --base-model-name MobileNet \
-    --weights-file $(pwd)/models/MobileNet/weights_mobilenet_technical_0.11.hdf5 \
+    ./predict \
+    --config-file $(pwd)/models/MobileNet/config_technical_cpu.json \
+    --samples-file $(pwd)/data/AVA/ava_labels_train.json \
     --image-source $(pwd)/src/tests/test_images
     ```
 ## Contribute
