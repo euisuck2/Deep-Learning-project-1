@@ -46,6 +46,7 @@ In order to stream logs from last launched container run
 In order to run predictions on an image or batch of images you can run the prediction script
 
 All image files in a directory
+
     ```
     ./predict \
     --config-file $(pwd)/models/MobileNet/config_technical_cpu.json \
