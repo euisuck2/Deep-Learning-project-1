@@ -45,16 +45,8 @@ In order to stream logs from last launched container run
 ## Predict
 In order to run predictions on an image or batch of images you can run the prediction script
 
-1. Single image file
-    ```bash
-    ./predict  \
-    --docker-image nima-cpu \
-    --base-model-name MobileNet \
-    --weights-file $(pwd)/models/MobileNet/weights_mobilenet_technical_0.11.hdf5 \
-    --image-source $(pwd)/src/tests/test_images/42039.jpg
     ```
-
-2. All image files in a directory
+All image files in a directory
     ```bash
     ./predict  \
     --docker-image nima-cpu \
@@ -73,9 +65,6 @@ See the [Contribution](CONTRIBUTING.md) guide for more details.
 This project uses two datasets to train the NIMA model:
 
 1. [**AVA**](https://github.com/ylogx/aesthetics/tree/master/data/ava) used for aesthetic ratings ([data](http://academictorrents.com/details/71631f83b11d3d79d8f84efe0a7e12f0ac001460))
-2. [**TID2013**](http://www.ponomarenko.info/tid2013.htm) used for technical ratings
-
-For training on AWS EC2 we recommend to build a custom AMI with the AVA images stored on it. This has proven much more viable than copying the entire dataset from S3 to the instance for each training job.
 
 
 ## Label files
@@ -103,11 +92,7 @@ For both datasets we provide train and test set label files stored under
 data/AVA/ava_labels_train.json
 data/AVA/ava_labels_test.json
 ```
-and
-```
-data/TID2013/tid2013_labels_train.json
-data/TID2013/tid2013_labels_test.json
-```
+
 
 For the AVA dataset we randomly assigned 90% of samples to the train set, and 10% to the test set, and throughout training a 5% validation set will be split from the training set to evaluate the training performance after each epoch. For the TID2013 dataset we split the train/test sets by reference images, to ensure that no reference image, and any of its distortions, enters both the train and test set.
 
