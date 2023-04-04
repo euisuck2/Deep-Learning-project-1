@@ -18,7 +18,7 @@ NIMA consists of two models that aim to predict the aesthetic and technical qual
 
 1. Download dataset (see instructions under [Datasets](#datasets))
 
-1.1 The "ava_labels_train.json" file only contains imaged id and labels for image category : "interior"
+  1.1 The "ava_labels_train.json" file only contains imaged id and labels for image category : "interior"
 
 2. Run the local training script (e.g. for AVA dataset)
     ```bash
