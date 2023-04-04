@@ -53,7 +53,7 @@ All image files in a directory
     --base-model-name MobileNet \
     --weights-file $(pwd)/models/MobileNet/weights_mobilenet_technical_0.11.hdf5 \
     --image-source $(pwd)/src/tests/test_images
-
+    ```
 ## Contribute
 We welcome all kinds of contributions and will publish the performances from new models in the performance table under [Trained models](#trained-models).
 
