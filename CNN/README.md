@@ -14,7 +14,6 @@ NIMA consists of two models that aim to predict the aesthetic and technical qual
 
 3. Build docker image `docker build -t nima-cpu . -f Dockerfile.cpu`
 
-    ```
 ## Train locally on CPU
 
 1. Download dataset (see instructions under [Datasets](#datasets))
@@ -46,8 +45,7 @@ In order to stream logs from last launched container run
 In order to run predictions on an image or batch of images you can run the prediction script
 
 All image files in a directory
-
-    ```
+    ```bash
     ./predict \
     --config-file $(pwd)/models/MobileNet/config_technical_cpu.json \
     --samples-file $(pwd)/data/AVA/ava_labels_train.json \
