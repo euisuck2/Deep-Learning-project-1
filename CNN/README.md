@@ -91,8 +91,7 @@ data/AVA/ava_labels_test.json
 ```
 
 
-For the AVA dataset we randomly assigned 90% of samples to the train set, and 10% to the test set, and throughout training a 5% validation set will be split from the training set to evaluate the training performance after each epoch. For the TID2013 dataset we split the train/test sets by reference images, to ensure that no reference image, and any of its distortions, enters both the train and test set.
-
+For the AVA dataset we randomly assigned 90% of samples to the train set, and 10% to the test set, and throughout training a 5% validation set will be split from the training set to evaluate the training performance after each epoch. 
 
 
 ## Copyright
