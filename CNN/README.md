@@ -96,11 +96,13 @@ For the AVA dataset these frequency distributions are given in the raw data file
 Train and test set label files stored under
 ```
 data/AVA/ava_labels_train.json
+data/AVA/ava_labels_train_entire.json
 data/AVA/ava_labels_test.json
 ```
 
 
 For the AVA dataset we randomly assigned 90% of samples to the train set, and 10% to the test set, and throughout training a 5% validation set will be split from the training set to evaluate the training performance after each epoch. 
+There are two train json files: a train set that only contains "interior" category images and entire image labels. 
 
 
 ## Copyright
