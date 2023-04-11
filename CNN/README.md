@@ -13,7 +13,7 @@ For this task, our team only measured aesthetic quality of images using MobileNe
 For the final aesthetic score, our team used predictions from two different Imagenet-based CNN models and averaged them. 
 At first, scores were calculated using three different models : MobileNet trained using the entire AVA dataset, MobileNet trained using only "interior" dataset, and InceptionV3 trained using only "interior" dataset. The MobilNet trained only on "interior" dataset performed poorly so our team dropped the score and compared the rest of the predictions from the models.
 
-For ImageNet, we used it with ImageNet weights for the model and replaced the last dense layer in MobileNet with a dense layer that outputs scores from 1 to 10. For InceptionV3, we trained the model from scratch and fine-tuned the model to produce the output scores. Then, we averaged those scores for each image from Airbnb listing and applied MinMax normalization since the scores were too cluttered to the mean.
+For MobileNet, we used the model with ImageNet weights and replaced the last dense layer in MobileNet with a dense layer that outputs scores from 1 to 10. For InceptionV3, we trained the model from scratch and fine-tuned the model to produce the output scores. Then, we averaged those scores for each image from Airbnb listing and applied MinMax normalization since the scores were too cluttered to the mean.
 
 
 ## Trained Model
