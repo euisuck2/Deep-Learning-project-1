@@ -1,5 +1,5 @@
 {
-  "train_env": "TID2013",
+  "train_env": "AVA",
   "docker_image": "nima-cpu",
   "base_model_name": "InceptionV3",
   "existing_weights": null,
