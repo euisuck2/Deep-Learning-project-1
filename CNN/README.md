@@ -4,7 +4,7 @@
 
 This repository provides an implementation of an aesthetic and technical image quality model based on Google's research paper ["NIMA: Neural Image Assessment"](https://arxiv.org/pdf/1709.05424.pdf) and idealo's technincal blog/github ["Image Quality Assessment"](https://devblogs.nvidia.com/deep-learning-hotel-aesthetics-photos/).
 NIMA consists of two models that aim to predict the aesthetic and technical quality of images, respectively. The models are trained via transfer learning, where ImageNet pre-trained CNNs are used and fine-tuned for the classification task.
-For this task, our team only measured aesthetic quality of images using MobileNet and InceptionV3. The serving used in this task was built upon idealo's code (https://github.com/idealo/image-quality-assessment). This repository provides weights and configs for the model our team trained using only images belong to 'interior' category from AVA dataset.
+For this task, our team only measured aesthetic quality of images using MobileNet and InceptionV3. The serving used in this task was built upon idealo's code (https://github.com/idealo/image-quality-assessment) and modified to fit our task. This repository provides weights and configs for the model our team trained using only images belong to 'interior' category from AVA dataset.
 
 ## Methodology
 
