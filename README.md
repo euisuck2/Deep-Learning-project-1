@@ -1,7 +1,7 @@
 # Capstone-Team-Air
 
-
-1) A data access statement indicating how to access the data or explaining who owns the data. Licenses for data use and redistribution are respected.
+## Data access - Licenses for data use and redistribution are respected
+All datasets used in this repo are publicly available. Please follow step 1 to attain all the datasets used. Alternatively, please refer to a Appendix section: "2.1 Data Sources" to get the original URLs for each data file. 
 
 ## Step 1: Download the Google Drive Folder 
 Please download the Capstone folder that is publicly available at https://drive.google.com/drive/folders/1XXY2yoEeRK7i43zANWpfetQNRhcAFT4w?usp=sharing.
