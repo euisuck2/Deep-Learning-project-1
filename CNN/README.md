@@ -1,11 +1,24 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-# Image Quality Assessment
+# Aesthetic score assessment on Airbnb listing pictures
 
 
-This repository provides an implementation of an aesthetic and technical image quality model based on Google's research paper ["NIMA: Neural Image Assessment"](https://arxiv.org/pdf/1709.05424.pdf). 
+This repository provides an implementation of an aesthetic and technical image quality model based on Google's research paper ["NIMA: Neural Image Assessment"](https://arxiv.org/pdf/1709.05424.pdf) and idealo's technincal blog/github ["Image Quality Assessment"](https://devblogs.nvidia.com/deep-learning-hotel-aesthetics-photos/).
 NIMA consists of two models that aim to predict the aesthetic and technical quality of images, respectively. The models are trained via transfer learning, where ImageNet pre-trained CNNs are used and fine-tuned for the classification task.
+For this task, our team only measured aesthetic quality of images using MobileNet and InceptionV3. The serving used in this task was built upon idealo's code (https://github.com/idealo/image-quality-assessment). This repository provides weights and configs for the model our team trained using only images belong to 'interior' category from AVA dataset.
+
+## Methodology
+
+<img width="1122" alt="Screen Shot 2023-04-07 at 4 27 42 PM" src="https://user-images.githubusercontent.com/5760152/231254166-59a3c982-7c99-4758-a8cf-b9106d63ba97.png">
+
+For the final aesthetic score, our team used predictions from two different Imagenet-based CNN models and averaged them. 
+At first, scores were calculated using three different models : MobileNet trained using the entire AVA dataset, MobileNet trained using only "interior" dataset, and InceptionV3 trained using only "interior" dataset. The MobilNet trained only on "interior" dataset performed poorly so our team dropped the score and compared the rest of the predictions from the models.
+For ImageNet, we used it with ImageNet weights for the model and replaced the last dense layer in MobileNet with a dense layer that outputs scores from 1 to 10. For InceptionV3, we trained the model from scratch and fine-tuned the model to produce the output scores. Then, we averaged those scores for each image from Airbnb listing and applied MinMax normalization since the scores were too cluttered to the mean.
 
 
+## Trained Model
+
+<img width="868" alt="trained model" src="https://user-images.githubusercontent.com/5760152/231256573-2d0d95a7-e8b4-4e57-89f7-381c6b5aa7b8.png">
+The trained model performed as shown above. MobileNet(Entire data) and InceptionV3(Interior data) performs quite well, which somewhat aligns with human judgement. 
 
 ## Getting started
 
@@ -52,15 +65,9 @@ All image files in a directory
     --samples-file $(pwd)/data/AVA/ava_labels_train.json \
     --image-source $(pwd)/src/tests/test_images
     ```
-## Contribute
-We welcome all kinds of contributions and will publish the performances from new models in the performance table under [Trained models](#trained-models).
-
-For example, to train a new aesthetic NIMA model based on InceptionV3 ImageNet weights, you just have to change the `base_model_name` parameter in the config file `models/MobileNet/config_aesthetic_gpu.json` to "InceptionV3". You can also control all major hyperparameters in the config file, like learning rate, batch size, or dropout rate.
-
-See the [Contribution](CONTRIBUTING.md) guide for more details.
 
 ## Datasets
-This project uses two datasets to train the NIMA model:
+This project uses a publicaly accessible dataset to train the NIMA model:
 
 1. [**AVA**](https://github.com/ylogx/aesthetics/tree/master/data/ava) used for aesthetic ratings ([data](http://academictorrents.com/details/71631f83b11d3d79d8f84efe0a7e12f0ac001460))
 
