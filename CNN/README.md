@@ -8,7 +8,8 @@ For this task, our team only measured aesthetic quality of images using MobileNe
 
 ## Methodology
 
-<img width="1122" alt="Screen Shot 2023-04-07 at 4 27 42 PM" src="https://user-images.githubusercontent.com/5760152/231254166-59a3c982-7c99-4758-a8cf-b9106d63ba97.png">
+<img width="1325" alt="Screen Shot 2023-04-12 at 3 07 51 PM" src="https://user-images.githubusercontent.com/5760152/231784642-b89d1832-f120-402c-8ecf-93e44399820b.png">
+
 
 For the final aesthetic score, our team used predictions from two different Imagenet-based CNN models and averaged them. 
 At first, scores were calculated using three different models : MobileNet trained using the entire AVA dataset, MobileNet trained using only "interior" dataset, and InceptionV3 trained using only "interior" dataset. The MobilNet trained only on "interior" dataset performed poorly so our team dropped the score and compared the rest of the predictions from the models.
