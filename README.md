@@ -6,7 +6,7 @@ All datasets used in this repo are publicly available. Please follow step 1 to a
 ## Data Access
 Licenses for data use and redistribution are respected. If you have any additional questions about our approach to data access or our compliance with licenses, please contact us at [Michwynn@umich.edu].
 
-## Introduction to the project
+## Introduction
 
 ## Script Relationship Diagram
 
