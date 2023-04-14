@@ -20,5 +20,6 @@ Note: All scripts are mounted to this "Capstone" folder.
 ## Step 2: Running Machine Learning 
 
 ## Step 3: Getting attractiveness scores from CNN and performing machine learning 
+Refer to README.md under CNN folder from this branch
 
 ## Step 4: Running Deep Learning
