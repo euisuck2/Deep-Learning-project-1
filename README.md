@@ -1,12 +1,22 @@
 # Capstone-Team-Air
 
+## Overview of the project
+The project aims to perform a development of an Airbnb price prediction model, which can provide hosts with a better understanding of the market and help them set competitive prices for their listings. The Airbnb platform is a popular way for hosts to offer affordable and unique accommodation choices, and can provide monetary benefit from the additional income. However, hosts often struggle to determine the optimal price for their listings, leading to missed opportunities and lower earnings. To address this problem, we propose to build and test both machine learning and deep learning models that predict the price of an Airbnb listing based on a variety of factors such as location, property type, amenities, etc. The models will be trained on a dataset of historical Airbnb listings in London, taking into account both numeric and categorical variables, and will be evaluated using appropriate performance metrics. The development of such a model can provide insights into the underlying factors that influence Airbnb prices. This will help Airbnb hosts with an objective and data-driven way to price their listings, based on the unique characteristics of their respective listings, allowing them to maximize their earnings while remaining competitive in the market. In this repository, There are three main parts from  the data cleaning and pre-processing steps: 
+
+1) Machine Learning 
+2) CNN + Machine Learning
+3) BERT + CNN + Deep Learning
+
+
 ## Data Sources
 All datasets used in this repo are publicly available. Please follow step 1 to attain all the datasets used. Alternatively, please refer to a Appendix section: "2.1 Data Sources" to get the original URLs for each data file. 
 
 ## Data Access
 Licenses for data use and redistribution are respected. If you have any additional questions about our approach to data access or our compliance with licenses, please contact us at [Michwynn@umich.edu].
 
-## Introduction
+## Introduction to Repo
+
+- To acquire the data, please 
 
 ## Results
 
