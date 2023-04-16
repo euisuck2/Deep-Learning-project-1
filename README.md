@@ -28,9 +28,9 @@ Refer to README.md under CNN folder for more information.
 ## BERT + CNN + Deep Learning
 To run the Deep learning model (along with vectorization of amenities using either GloVe or BERT) run the Deep_learning_models.ipynb jupyter notebook. You need to run the cells sequentially. The code has 4 parts to it 
 1) Deep learning regression model with all features + GloVe Vector representation of amenities + features from the CNN model
-2) Deep learning regression model with all features + GloVe Vector representation of amenities 
+2) Deep learning regression model with all features + GloVe Vector representation of amenities (features from the CNN model are excluded)
 3) Deep learning regression model with all features + BERT Vector representation of amenities + features from the CNN model
-4) Deep learning regression model with all features + GloVe Vector representation of amenities 
+4) Deep learning regression model with all features + BERT Vector representation of amenities (features from the CNN model are excluded)
 Make sure that all the required dependencies are installed before running the code 
 
 ## Data Sources
