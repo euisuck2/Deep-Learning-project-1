@@ -18,9 +18,10 @@ Note: All scripts are already mounted to this "Capstone" folder. However, if you
 - from google.colab import drive
 - drive.mount('/content/drive')
 
-## Step 2: Machine Learning 
+## Machine Learning 
+Once you have downloaded the capstone folder, to run the machine learning code in this repository, navigate to the parent directory where the Machine Learning.ipynb file is located and open it in Colaboratory. If you would like to use Jupyter Notebook, you'll need Jupyter Notebook installed on your local machine. From there, you can run each cell in the notebook sequentially to see the results of the machine learning model. Make sure to have all the required dependencies installed before running the notebook. Please refer to requirements.txt.
 
-## Step 3: CNN + Machine Learning 
+## CNN + Machine Learning 
 Refer to README.md under CNN folder for more information.
 
 ## Step 4: BERT + CNN + Deep Learning
