@@ -13,13 +13,13 @@ The project aims to perform a development of an Airbnb price prediction model, w
 ## Getting the data and data cleaning - Download the Google Drive Folder 
 All datasets used in this repo are publicly available. Please download the Capstone folder, which has the datasets already stored in one folder and is made publicly available at https://drive.google.com/drive/folders/1XXY2yoEeRK7i43zANWpfetQNRhcAFT4w?usp=sharing.
 This step is crucial as it allows you to download all colaboratory scripts and secures all working directories as intended in the scripts themselves. Alternatively, please refer to a "Data Sources" section below  to get the original URLs for each data file.
-Note: All scripts are already mounted to this "Capstone" folder. However, if you are not using colaboratory environment, you may remove the following import code in the notebooks that have them:
+Note: All scripts are already mounted to this "Capstone" folder. The following import code are present in most the notebooks that require reading the datafiles in the capstone folder from the drive:
 
 - from google.colab import drive
 - drive.mount('/content/drive')
 
 ## Machine Learning 
-Once you have downloaded the capstone folder, to run the machine learning code in this repository, navigate to the parent directory where the Machine Learning.ipynb file is located and open it in Colaboratory. If you would like to use Jupyter Notebook, you'll need Jupyter Notebook installed on your local machine. From there, you can run each cell in the notebook sequentially to see the results of the machine learning model. Make sure to have all the required dependencies installed before running the notebook. Please refer to requirements.txt.
+Once you have downloaded the capstone folder, to run the machine learning code in this repository, navigate to the parent directory where the Machine Learning.ipynb file is located and open it in Colaboratory. From there, you can run each cell in the notebook sequentially to see the results of the machine learning model. Make sure to have all the required dependencies installed before running the notebook. Please refer to requirements.txt.
 
 ## CNN + Machine Learning 
 Refer to README.md under CNN folder for more information.
