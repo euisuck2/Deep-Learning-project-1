@@ -8,6 +8,7 @@ The project aims to perform a development of an Airbnb price prediction model, w
 3) BERT + CNN + Deep Learning
 
 ## Script-Data Relationship Diagram
+![image](https://user-images.githubusercontent.com/83803770/232315819-d1d75e77-03f1-4749-8774-95abba0e8ead.png)
 
 
 ## Getting Started 
