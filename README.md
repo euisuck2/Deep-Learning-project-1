@@ -31,7 +31,7 @@ To run the Deep learning model (along with vectorization of amenities using eith
 2) Deep learning regression model with all features + GloVe Vector representation of amenities 
 3) Deep learning regression model with all features + BERT Vector representation of amenities + features from the CNN model
 4) Deep learning regression model with all features + BERT Vector representation of amenities 
-Make sure that all the required dependencies are installed before running the code 
+- Make sure that all the required dependencies are installed before running the code 
 
 ## Data Sources
 All datasets used in this repo are publicly available.
