@@ -36,48 +36,48 @@ All datasets used in this repo are publicly available.
 - Detailed review data for all London listed airbnb properties. Data columns include review IDs, Listing IDs, date of review, the reviewer’s name and the review itself in text format.
 
 3) Calendar dataset
--  Detailed calendar data for all London listed Airbnb properties, which includes listing IDs, date of listing, whether listing was available at that point in time, price recommended by Airbnb Smart pricing tool, the maximum and minimum night requirements of listing.
+- Detailed calendar data for all London listed Airbnb properties, which includes listing IDs, date of listing, whether listing was available at that point in time, price recommended by Airbnb Smart pricing tool, the maximum and minimum night requirements of listing.
 
 For all three datasets:
-Location: http://insideairbnb.com/get-the-data.html
-Format: CSV
-Access Method: Download
+- Location: http://insideairbnb.com/get-the-data.html
+- Format: CSV
+- Access Method: Download
 
 ### Secondary Sources
 
 1) Population Density dataset
--  Population data for London that includes the area name, inland area, total area, population per hectare, 2011 Census population figures for each area.
-Location:https://data.london.gov.uk/dataset/land-area-and-population-density-ward-and-borough
-Format: CSV
-Access Method: Download
+- Population data for London that includes the area name, inland area, total area, population per hectare, 2011 Census population figures for each area.
+- Location:https://data.london.gov.uk/dataset/land-area-and-population-density-ward-and-borough
+- Format: CSV
+- Access Method: Download
 
 
 2) Public Transport dataset
 - London underground data including station IDs, latitudes, longitudes, name, zone
-Location: https://commons.wikimedia.org/wiki/London_Underground_geographic_maps/CSV
-Format: HTML
-Access Method: Web scraping
+- Location: https://commons.wikimedia.org/wiki/London_Underground_geographic_maps/CSV
+- Format: HTML
+- Access Method: Web scraping
 
 
 3) Leading Visitor Attraction dataset
 - 2020 visitor attraction dataset which includes ranking of visited site, name of attraction, total visitors and area. 
-Location: https://commons.wikimedia.org/wiki/London_Underground_geographic_maps/CSV
-Format: HTML
-Access Method: Copy/Paste into excel and tagged each area of interest manually for longitude, latitude and borough
+- Location: https://commons.wikimedia.org/wiki/London_Underground_geographic_maps/CSV
+- Format: HTML
+- Access Method: Copy/Paste into excel and tagged each area of interest manually for longitude, latitude and borough
 
 
 4) London boroughs property prices dataset
-2021 average property prices by boroughs can be found within this dataset. 
-Location: https://www.gov.uk/government/statistics/uk-house-price-index-for-october-2021/uk-house-price-index-england-october-2021
-Format: CSV
-Access Method: Download
+- 2021 average property prices by boroughs can be found within this dataset. 
+- Location: https://www.gov.uk/government/statistics/uk-house-price-index-for-october-2021/uk-house-price-index-england-october-2021
+- Format: CSV
+- Access Method: Download
 
 
 5) AVA dataset 
 -  Aesthetic Visual Analysis (AVA) contains over 250,000 images along with a rich variety of meta-data including a large number of aesthetic scores for each image, semantic labels for over 60 categories as well as labels related to photographic style for high-level image quality categorization.
-Location: https://academictorrents.com/details/71631f83b11d3d79d8f84efe0a7e12f0ac001460
-Format: jpg,json,txt
-Access Method: Download
+- Location: https://academictorrents.com/details/71631f83b11d3d79d8f84efe0a7e12f0ac001460
+- Format: jpg,json,txt
+- Access Method: Download
 
 
 ## Data Access
