@@ -10,7 +10,7 @@ The project aims to perform a development of an Airbnb price prediction model, w
 ## Script-Data Relationship Diagram
 
 
-## Getting the data and data cleaning - Download the Google Drive Folder 
+## Getting Started 
 All datasets used in this repo are publicly available. Please download the Capstone folder, which has the datasets already stored in one folder and is made publicly available at https://drive.google.com/drive/folders/1XXY2yoEeRK7i43zANWpfetQNRhcAFT4w?usp=sharing.
 This step is crucial as it allows you to download all colaboratory scripts and secures all working directories as intended in the scripts themselves. Alternatively, please refer to a "Data Sources" section below  to get the original URLs for each data file.
 Note: All scripts are already mounted to this "Capstone" folder. The following import code are present in most the notebooks that require reading the datafiles in the capstone folder from the drive:
