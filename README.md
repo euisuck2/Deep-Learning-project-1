@@ -24,7 +24,7 @@ Once you have downloaded the capstone folder, to run the machine learning code i
 ## CNN + Machine Learning 
 Refer to README.md under CNN folder for more information.
 
-## Step 4: BERT + CNN + Deep Learning
+## BERT + CNN + Deep Learning
 
 
 ## Data Sources
