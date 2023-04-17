@@ -20,7 +20,9 @@ Note: All scripts are already mounted to this "Capstone" folder. The following i
 - drive.mount('/content/drive')
 
 ## Machine Learning 
-Once you have downloaded the capstone folder, to run the machine learning code in this repository, navigate to the parent directory where the Machine Learning.ipynb file is located and open it in Colaboratory. From there, you can run each cell in the notebook sequentially to see the results of the machine learning model. Make sure to have all the required dependencies installed before running the notebook. Please refer to requirements.txt.
+Once you have downloaded the capstone folder, to run the machine learning code in this repository, navigate to the parent directory where the Machine Learning.ipynb file is located and open it in Colaboratory. However, please refer to the script-data relationship diagram above and run the necessary scripts before Machine Learning.ipynb. From there, you can run each cell in the notebook sequentially to see the results of each machine learning model. Make sure to have all the required dependencies installed before running the notebook. Please refer to requirements.txt.
+
+
 
 ## CNN + Machine Learning 
 Refer to README.md under CNN folder for more information.
