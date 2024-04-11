@@ -1,5 +1,5 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-## Aesthetic score assessment on Airbnb listing pictures
+# Aesthetic score assessment on Airbnb listing pictures
 
 
 This repository provides an implementation of an aesthetic and technical image quality model based on Google's research paper ["NIMA: Neural Image Assessment"](https://arxiv.org/pdf/1709.05424.pdf) and idealo's technincal blog/github ["Image Quality Assessment"](https://devblogs.nvidia.com/deep-learning-hotel-aesthetics-photos/).
